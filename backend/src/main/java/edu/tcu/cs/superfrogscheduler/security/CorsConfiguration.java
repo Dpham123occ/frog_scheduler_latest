@@ -16,8 +16,7 @@ public class CorsConfiguration {
                 registry.addMapping("/**")
                         .allowedOrigins("*") // Allow this origin to make requests
                         .allowedMethods("GET", "POST", "PUT", "DELETE") // Allowed HTTP methods
-                        .allowedHeaders("*") // Allow all headers
-                        .allowCredentials(true); // Include cookies in the requests; // Enable CORS for the whole application.
+                        .allowedHeaders("*"); // Allow all headers
             }
         };
     }
