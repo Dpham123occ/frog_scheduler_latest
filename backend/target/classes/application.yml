@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:superfrog-scheduler
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  profiles:
+    active: dev
+api:
+  endpoint:
+    base-url: /api
+server:
+  port: 8080
