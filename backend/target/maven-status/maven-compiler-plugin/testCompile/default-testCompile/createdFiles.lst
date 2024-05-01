@@ -1,0 +1,7 @@
+edu\tcu\cs\superfrogscheduler\customer\CustomerControllerTest.class
+edu\tcu\cs\superfrogscheduler\request\RequestServiceTest.class
+edu\tcu\cs\superfrogscheduler\request\RequestControllerTest.class
+edu\tcu\cs\superfrogscheduler\superfrog\SuperfrogServiceTest.class
+edu\tcu\cs\superfrogscheduler\customer\CustomerServiceTest.class
+edu\tcu\cs\superfrogscheduler\SuperfrogSchedulerApplicationTests.class
+edu\tcu\cs\superfrogscheduler\superfrog\SuperfrogControllerTest.class

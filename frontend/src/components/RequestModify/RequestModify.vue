@@ -23,7 +23,7 @@ export default {
   methods: {
     async fetchRequestId() {
       try {
-        const response = await axios.get(`https://superfrog-container-backend.nicerock-3516d100.eastus.azurecontainerapps.io/api/requests/${this.requestId}`);
+        const response = await axios.get(`https://frog-scheduler-latest.onrender.com/api/requests/${this.requestId}`);
         const data = response.data;
         
         // Check if the returned request ID matches the input

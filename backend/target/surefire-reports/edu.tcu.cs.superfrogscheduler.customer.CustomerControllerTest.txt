@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: edu.tcu.cs.superfrogscheduler.customer.CustomerControllerTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.24 s -- in edu.tcu.cs.superfrogscheduler.customer.CustomerControllerTest
