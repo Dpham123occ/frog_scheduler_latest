@@ -13,7 +13,12 @@ import Login from '../components/Login/Login.vue';
 import ModifyDetail from '../components/RequestModify/ModifyDetail.vue';
 import SuperFrogDirector from '../components/SuperFrogDirector/SuperFrogDirector.vue';
 import SuperFrog from '../components/SuperFrogStudent/SuperFrogStudent.vue';
-
+import AddRequest from '../components/SuperFrogDirector/AddRequest.vue';
+import AddStudent from '../components/SuperFrogDirector/AddStudent.vue';
+import Calendar from '../components/SuperFrogDirector/CalendarPage.vue';
+import Reports from '../components/SuperFrogDirector/ReportsPage.vue';
+import ViewRequests from '../components/SuperFrogDirector/ViewRequests.vue';
+import ViewStudents from '../components/SuperFrogDirector/ViewStudents.vue';
 
 
 // Create the router instance.
@@ -39,6 +44,12 @@ const router = createRouter({
         { path: '/modify-request/:requestId', name: 'modify-detail', component: ModifyDetail},
         { path: '/super-frog-director', name: 'super-frog-director', component: SuperFrogDirector},
         { path: '/super-frog/:id', name: 'super-frog', component: SuperFrog},
+        { path: '/super-frog-director/add-request', component: AddRequest },
+        { path: '/super-frog-director/add-student', component: AddStudent },
+        { path: '/super-frog-director/calendar', component: Calendar },
+        { path: '/super-frog-director/reports', component: Reports },
+        { path: "/super-frog-director/view-requests", component: ViewRequests },
+        { path: "/super-frog-director/view-students", component: ViewStudents },
     ],
 });
 export default router;
