@@ -19,6 +19,7 @@
     </div>
     <router-link to="/super-frog-director/calendar" class="sidebar-single-link">Calendar</router-link>
     <router-link to="/super-frog-director/reports" class="sidebar-single-link">Reports</router-link>
+    <button @click="logout">Logout</button>
   </div>
 </template>
 
@@ -34,16 +35,20 @@ export default {
     toggleDropdown(dropdown) {
       this[dropdown] = !this[dropdown];
     },
+    logout() {
+      localStorage.removeItem("token");
+      localStorage.removeItem("username");
+      this.$router.push("/login");
+    },
   },
 };
 </script>
 
 <style scoped>
 .sidebar {
-  background-color: #4B0082;
+  background-color: white;
   color: white;
   width: 250px;
-  height: 100vh;
   padding: 20px;
 }
 
@@ -59,7 +64,7 @@ export default {
 
 .sidebar-section-header {
   text-decoration: none;
-  color: white;
+  color: black;
   display: block;
   padding: 15px;
   margin-bottom: 10px;
@@ -83,7 +88,7 @@ export default {
 
 .sidebar-single-link {
   text-decoration: none;
-  color: white;
+  color: black;
   display: block;
   padding: 15px;
   margin-bottom: 10px;
