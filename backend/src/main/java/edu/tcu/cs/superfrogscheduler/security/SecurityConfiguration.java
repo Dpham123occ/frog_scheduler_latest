@@ -68,12 +68,12 @@ public class SecurityConfiguration {
                         .requestMatchers(HttpMethod.PUT, this.baseUrl + "/requests/**").permitAll()
                         .requestMatchers(HttpMethod.DELETE, this.baseUrl + "/requests/**").permitAll()
                         .requestMatchers(HttpMethod.GET, this.baseUrl + "/superfrogs/**").permitAll()
-                        .requestMatchers(HttpMethod.POST, this.baseUrl + "/superfrogs").hasAuthority("ROLE_spiritdirector")
-                        .requestMatchers(HttpMethod.PUT, this.baseUrl + "/superfrogs/**").hasAuthority("ROLE_superfrog")
-                        .requestMatchers(HttpMethod.GET, this.baseUrl + "/users/**").hasAuthority("ROLE_spiritdirector") // Protect the endpoint.
-                        .requestMatchers(HttpMethod.POST, this.baseUrl + "/users").hasAuthority("ROLE_spiritdirector") // Protect the endpoint.
-                        .requestMatchers(HttpMethod.PUT, this.baseUrl + "/users/**").hasAuthority("ROLE_spiritdirector") // Protect the endpoint.
-                        .requestMatchers(HttpMethod.DELETE, this.baseUrl + "/users/**").hasAuthority("ROLE_spiritdirector") // Protect the endpoint.
+                        .requestMatchers(HttpMethod.POST, this.baseUrl + "/superfrogs").permitAll()
+                        .requestMatchers(HttpMethod.PUT, this.baseUrl + "/superfrogs/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, this.baseUrl + "/users/**").permitAll() // Protect the endpoint.
+                        .requestMatchers(HttpMethod.POST, this.baseUrl + "/users").permitAll() // Protect the endpoint.
+                        .requestMatchers(HttpMethod.PUT, this.baseUrl + "/users/**").permitAll() // Protect the endpoint.
+                        .requestMatchers(HttpMethod.DELETE, this.baseUrl + "/users/**").permitAll() // Protect the endpoint.
                         .requestMatchers(AntPathRequestMatcher.antMatcher("/h2-console/**")).permitAll() // Explicitly fallback to antMatcher inside requestMatchers.
                         // Disallow everything else.
                         .anyRequest().authenticated() // Always a good idea to put this as last.
